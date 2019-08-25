@@ -19,5 +19,7 @@ from babelconverter import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('convert/', views.test),
-    path('convert/smiles', views.convert)
+    path('convert/smiles', views.convert),
+    path('compound-by-name', views.compositeByName),
+    path('compound-by-name/image', views.compositeImageByName)
 ]
