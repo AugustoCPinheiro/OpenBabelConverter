@@ -22,7 +22,7 @@ def compositeByName(request):
 def compositeImageByName(request):
   loaded = json.loads(request.body)
   compound_name = loaded['compound-name']
-  
+  print(compound_name)
   r = requests.request('GET','https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/'+ compound_name +'/JSON')
   
   smiles = r.json()['PC_Compounds'][0]['props'][18]['value']['sval']
