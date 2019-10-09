@@ -2,7 +2,7 @@
  jobs:
    build:
      docker:
-       - image: circleci/ruby:2.4.1
+       - image: augustocp/openbabel:python
      steps:
        - checkout
        - run: echo "A first hello"
